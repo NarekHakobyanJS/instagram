@@ -6,16 +6,13 @@ import { Provider } from 'react-redux';
 import { store } from './store/store'
 import { BrowserRouter } from 'react-router-dom';
 
-
-console.log(thunk);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
         <Provider store={store}>
-             <BrowserRouter>
-             <App />
-             </BrowserRouter>
+                <BrowserRouter>
+                        <App />
+                </BrowserRouter>
         </Provider>
- 
+
 );
