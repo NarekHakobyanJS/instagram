@@ -7,6 +7,7 @@ const Header = () => {
         <h1>MyGram</h1>
         <nav>
             <NavLink to='/users'>Users</NavLink>
+            <NavLink to='/login'>Login</NavLink>
         </nav>
     </header>
   )

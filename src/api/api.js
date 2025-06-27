@@ -2,6 +2,9 @@ import axios from 'axios';
 
 const instance = axios.create({
     baseURL : 'https://social-network.samuraijs.com/api/1.0',
+    headers : {
+        Authorization : 'asasasasas'
+    }
 })
 
 export const socialAPI = {
@@ -10,6 +13,9 @@ export const socialAPI = {
     },
     getUser(userId){
         return instance.get(`/profile/${userId}`)
+    },
+    login(body = {}){
+        return instance.post(`/auth/login`, body)
     }
 }
 
